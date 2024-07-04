@@ -5,9 +5,8 @@ $host = "localhost";
 $user = "root";
 $password = "";
 $db_name = "todo_list";
-$socket = "/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock";
 
-$db = new mysqli($host, $user, $password, $db_name,null,$socket);
+$db = new mysqli($host, $user, $password, $db_name);
 if ($db->connect_error) {
     die("Kết nối thất bại: " . $db->connect_error);
 }
